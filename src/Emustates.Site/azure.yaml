@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: emustates-site
+services:  
+  app:
+    language: dotnet
+    project: ./Emustates.Site.AppHost/Emustates.Site.AppHost.csproj
+    host: containerapp
