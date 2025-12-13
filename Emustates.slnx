@@ -1,4 +1,10 @@
 <Solution>
+  <Folder Name="/Core/">
+    <Project Path="src/Emustates.Application.Abstractions/Emustates.Application.Abstractions.csproj" Id="45d03bd4-9526-4098-819e-c06cd055d167" />
+    <Project Path="src/Emustates.Application/Emustates.Application.csproj" Id="5df9e7b9-fa93-4af6-a7ab-d53bbb652d78" />
+    <Project Path="src/Emustates.Core.Abstractions/Emustates.Core.Abstractions.csproj" Id="e76a4700-4118-410e-b573-f598593e7165" />
+    <Project Path="src/Emustates.Core/Emustates.Core.csproj" Id="f07bd8f7-5ebb-46ae-b261-2d56d11cb44d" />
+  </Folder>
   <Folder Name="/Infrastructure/">
     <Project Path="src/Infra/Emustates.Infra.AspireServiceDefaults/Emustates.Infra.AspireServiceDefaults.csproj" Id="97cdd190-f575-4333-963c-bdda812967bf" />
     <Project Path="src/Infra/Emustates.Infra.Data/Emustates.Infra.Data.csproj" Id="7f6b5579-18b4-40d0-b8e9-23bd2ada0973" />
@@ -11,8 +17,4 @@
     <Project Path="src/Emustates.Site/Emustates.Site/Emustates.Site.csproj" />
   </Folder>
   <Project Path="AspireAppHost/AspireAppHost.csproj" Id="911bd77b-1aa1-489a-90b8-eae2d91ece7a" />
-  <Project Path="src/Emustates.Application.Abstractions/Emustates.Application.Abstractions.csproj" Id="45d03bd4-9526-4098-819e-c06cd055d167" />
-  <Project Path="src/Emustates.Application/Emustates.Application.csproj" Id="5df9e7b9-fa93-4af6-a7ab-d53bbb652d78" />
-  <Project Path="src/Emustates.Core.Abstractions/Emustates.Core.Abstractions.csproj" Id="e76a4700-4118-410e-b573-f598593e7165" />
-  <Project Path="src/Emustates.Core/Emustates.Core.csproj" Id="f07bd8f7-5ebb-46ae-b261-2d56d11cb44d" />
 </Solution>
