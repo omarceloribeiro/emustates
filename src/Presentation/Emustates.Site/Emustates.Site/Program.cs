@@ -6,6 +6,8 @@ using Emustates.Site.Components.Account;
 using Emustates.Site.Data;
 using Emustates.Infra.Data;
 using Microsoft.Extensions.Hosting;
+using Emustates.Site;
+using Emustates.Site.IdentityCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,21 +31,12 @@ builder.Services.AddAuthentication(options =>
     ;
 builder.Services.AddAuthorization();
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-builder.Services.AddDbContext<EmustatesDbContext>(options =>
-    options.UseSqlServer(connectionString));
+builder.AddDataEntityFrameworkCore();
+builder.AddAspnetIdentityCore();
+builder.AddAspnetIdentityImplementation();
+
+// Development behaviors
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-
-builder.Services.AddIdentityCore<ApplicationUser>(options =>
-    {
-        options.SignIn.RequireConfirmedAccount = true;
-        options.Stores.SchemaVersion = IdentitySchemaVersions.Version3;
-    })
-    .AddEntityFrameworkStores<EmustatesDbContext>()
-    .AddSignInManager()
-    .AddDefaultTokenProviders();
-
-builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
 
 var app = builder.Build();
 

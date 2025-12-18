@@ -17,10 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Infra\Emustates.Infra.AspireServiceDefaults\Emustates.Infra.AspireServiceDefaults.csproj" />
-    <ProjectReference Include="..\..\Infra\Emustates.Infra.Data\Emustates.Infra.Data.csproj" />
+    <ProjectReference Include="..\..\..\Infra\Emustates.Infra.AspireServiceDefaults\Emustates.Infra.AspireServiceDefaults.csproj" />
+    <ProjectReference Include="..\..\..\Infra\Emustates.Infra.Data\Emustates.Infra.Data.csproj" />
     <ProjectReference Include="..\Emustates.Site.Client\Emustates.Site.Client.csproj" />
     <ProjectReference Include="..\Emustates.Site.Data\Emustates.Site.Data.csproj" />
+    <ProjectReference Include="..\Emustates.Site.IdentityCore\Emustates.Site.IdentityCore.csproj" />
   </ItemGroup>
 
 </Project>

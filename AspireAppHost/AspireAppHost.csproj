@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Emustates.Site\Emustates.Site\Emustates.Site.csproj" />
+    <ProjectReference Include="..\src\Presentation\Emustates.Site\Emustates.Site\Emustates.Site.csproj" />
   </ItemGroup>
 
 </Project>
