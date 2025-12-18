@@ -6,6 +6,7 @@ namespace Emustates.Site.Api
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Microsoft.AspNetCore.RateLimiting.EnableRateLimiting("test-api")]
     public class TestRestApiController : ControllerBase
     {
         [HttpGet("ping")]
